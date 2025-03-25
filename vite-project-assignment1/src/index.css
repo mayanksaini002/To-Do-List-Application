@@ -1,0 +1,143 @@
+
+body {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #89f7fe, #66a6ff);
+  margin: 0;
+}
+
+.app {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  width: 500px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.app:hover {
+  transform: scale(1.03);
+}
+
+.header {
+  margin-bottom: 40px;
+  margin-top: 2px;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  font-size: 28px;
+  font-weight: bold;
+  color: #2d2d2d;
+  background-color: #85b4f6;
+  border-radius: 5px;
+  border: 2px solid black;
+  box-shadow: 1px 2px 4px rgb(0, 0, 0);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.task-input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.task-input input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.task-input button {
+  padding: 10px;
+  border: none;
+  background: #66a6ff;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.task-input button:hover {
+  background: #4a90e2;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.todo-item:hover {
+  transform: scale(1.02);
+}
+
+.todo-item span {
+  flex: 1;
+  cursor: pointer;
+}
+
+.todo-item button {
+  border: none;
+  padding: 5px 8px;
+  margin-left: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.todo-item .edit {
+  background: #fbc02d;
+  color: white;
+}
+
+.todo-item .edit:hover {
+  background: #f9a825;
+}
+
+.todo-item .delete {
+  background: #e57373;
+  color: white;
+}
+
+.todo-item .delete:hover {
+  background: #d32f2f;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+  opacity: 0.7;
+}
+
+.todo-item .tick {
+  background: #4caf50;
+  color: white;
+  border: none;
+  padding: 5px 8px;
+  margin-left: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.todo-item .tick:hover {
+  background: #388e3c;
+}
